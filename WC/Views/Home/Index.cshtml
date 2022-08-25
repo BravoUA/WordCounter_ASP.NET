@@ -1,0 +1,45 @@
+﻿@model InputPropertiesModel
+
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    <div class="row">
+        <div class="col-6">
+            <div class="card">
+
+                <div class="card-body">
+                    <form asp-controller="Home" asp-action="Result" method="post">
+                        <label class="form-label">Count Top Word</label>
+                        <input asp-for=topWordCount type="text" class="form-control" />
+                        <label class="form-label">Count Top Word Resaul</label>
+                        <input asp-for=topWordResaulCount type="text" class="form-control" />
+
+                        <label class="form-label">Input Test</label>
+                        <input asp-for=ollText type="text" class="form-control" />
+
+                        <button class="btn btn-primary" type="submit">Submit</button>
+
+                    </form>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+</div>
